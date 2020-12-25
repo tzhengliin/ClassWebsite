@@ -94,4 +94,13 @@ section.article>.articleblock>.artilegrid>.bottom>div {
         display: flex;
         flex-direction: column;
     }
+    section.article>.articleblock>.artilegrid>.title {
+        font-size: 1.5em;
+    }
+    section.article>.articleblock>.artilegrid>.textbox {
+        padding: 0px 30px;
+    }
+    section.article>.articleblock>.artilegrid>.bottom {
+        padding: 0px 30px;
+    }
 }
