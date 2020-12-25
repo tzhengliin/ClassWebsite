@@ -1,0 +1,97 @@
+section.article {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+section.article>.articleblock {
+    display: flex;
+    justify-content: center;
+    width: 1000px;
+    margin-bottom: 50px;
+    align-items: center;
+}
+
+section.article>.articleblock>.pic {
+    background-color: red;
+    width: 80%;
+    height: 300px;
+    border: 1px solid #6b6a6a;
+}
+
+section.article>.articleblock>.pic1 {
+    background-image: url(article-1.jpeg);
+    background-size: cover;
+}
+
+section.article>.articleblock>.pic2 {
+    background-image: url(article-2.jpeg);
+    background-size: cover;
+}
+
+section.article>.articleblock>.pic1>.piccover1 {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    text-align: center;
+    display: block;
+}
+
+section.article>.articleblock>.pic2>.piccover2 {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    text-align: center;
+    display: block;
+}
+
+section.article>.articleblock>.pic1>.piccover1:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+section.article>.articleblock>.pic2>.piccover2:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+section.article>.articleblock>.artilegrid {
+    width: 80%;
+    height: 300px;
+    border: 1px solid #6b6a6a;
+}
+
+section.article>.articleblock>.artilegrid>.title {
+    font-size: 2em;
+    padding: 10px 30px;
+    padding-top: 30px;
+}
+
+section.article>.articleblock>.artilegrid>.textbox {
+    font-size: 0.7em;
+    padding: 10px 30px;
+    color: #6b6a6a;
+}
+
+section.article>.articleblock>.artilegrid>.bottom {
+    font-size: 0.7em;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: left;
+    color: #6b6a6a;
+}
+
+section.article>.articleblock>.artilegrid>.bottom>div {
+    padding-right: 30px;
+}
+
+@media(max-width:800px) {
+    section.aritcle {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    section.article>.articleblock {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+}
